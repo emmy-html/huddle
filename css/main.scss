@@ -94,7 +94,165 @@ textarea {
   padding: 0.2em 0;
 }
 
+/* Fonts & Colors */
+
+$heading-font: 'Poppins', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+$body-size: 18px;
+
+$pink: hsl(322, 100%, 66%);
+$dark-cyan: hsl(192, 100%, 9%);
+$pale-blue: hsl(207, 100%, 98%);
+$grey: #8a959d;
+
+/* Margins & Padding */
+
+$heading-margin: 0px 20px;
+$heading-padding: 20px 0px;
+$body-margin: 50px;
+$footer-margin: 50px 50px 0px 50px;
+
+/* Button Styles */
+
+/* Image Sizes */
+$full-width: 100%;
+$half-width: 50%;
+
 /* Main Styles */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $body-font;
+  font-size: $body-size;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $heading-font;
+}
+
+h1,
+h2 {
+  color: $dark-cyan;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  text-align: left;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: $heading-margin;
+  padding: $heading-padding;
+  .logo img {
+    width: $half-width;
+  }
+}
+
+/* Hero */
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content-wrapper {
+    margin: $body-margin;
+  }
+  p {
+    text-align: center;
+  }
+  .hero-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    article {
+      margin-bottom: 150px;
+    }
+    h1 {
+      font-family: $body-font;
+      font-size: 4rem;
+      line-height: .05rem;
+    }
+    i {
+      color: $pink;
+    }
+    p {
+      color: $grey;
+      line-height: 0.20rem;
+    }
+  }
+  img {
+    width: $full-width;
+    padding: 50px 0px;
+  }
+}
+
+#more-info {
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: $body-margin;
+    article {
+      align-self: center;
+      text-align: center;
+      margin-bottom: 150px;
+    }
+    img {
+      width: $full-width;
+    }
+  }
+  .sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+footer {
+  background: $dark-cyan;
+  .content-wrapper {
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: $footer-margin;
+    div {
+      width: $full-width;
+      margin-top: 50px;
+    }
+    i {
+      padding-right: 20px;
+    }
+  }
+  .attribution {
+    color: white;
+    font-size: .75rem;
+    margin: 10px 10px 0px 10px;
+    padding: 0;
+    text-align: center;
+  }
+}
+
 
 /* ==========================================================================
    Helper classes

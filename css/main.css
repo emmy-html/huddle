@@ -77,7 +77,114 @@ textarea {
   color: #000;
   padding: 0.2em 0; }
 
+/* Fonts & Colors */
+/* Margins & Padding */
+/* Button Styles */
+/* Image Sizes */
 /* Main Styles */
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px; }
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif; }
+
+h1,
+h2 {
+  color: #00252e;
+  text-align: center; }
+
+h3 {
+  color: white;
+  text-align: left; }
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px;
+  padding: 20px 0px; }
+  header .logo img {
+    width: 50%; }
+
+/* Hero */
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #hero .content-wrapper {
+    margin: 50px; }
+  #hero p {
+    text-align: center; }
+  #hero .hero-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #hero .hero-stats article {
+      margin-bottom: 150px; }
+    #hero .hero-stats h1 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 4rem;
+      line-height: .05rem; }
+    #hero .hero-stats i {
+      color: #ff52bf; }
+    #hero .hero-stats p {
+      color: #8a959d;
+      line-height: 0.20rem; }
+  #hero img {
+    width: 100%;
+    padding: 50px 0px; }
+
+#more-info .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px; }
+  #more-info .content-wrapper article {
+    align-self: center;
+    text-align: center;
+    margin-bottom: 150px; }
+  #more-info .content-wrapper img {
+    width: 100%; }
+#more-info .sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #more-info .sign-up h1 {
+    font-size: 2rem; }
+
+footer {
+  background: #00252e; }
+  footer .content-wrapper {
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px 0px 50px; }
+    footer .content-wrapper div {
+      width: 100%;
+      margin-top: 50px; }
+    footer .content-wrapper i {
+      padding-right: 20px; }
+  footer .attribution {
+    color: white;
+    font-size: .75rem;
+    margin: 10px 10px 0px 10px;
+    padding: 0;
+    text-align: center; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
