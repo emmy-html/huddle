@@ -151,6 +151,7 @@ h2 {
 h3 {
   color: white;
   text-align: left;
+  text-transform: uppercase;
 }
 
 /* Header */
@@ -182,6 +183,7 @@ header {
   a.nav-hover:hover {
     background: $pink;
     color: white;
+    transition: background-color 1s;
   }
 }
 
@@ -244,6 +246,7 @@ header {
     color: $pink;
     background-color: white;
     border: 1px solid $pink;
+    transition: background-color 1s;
   }
 
 /* Features */
@@ -279,6 +282,16 @@ header {
 
 footer {
   background: $dark-cyan;
+  a:link,
+  a:visited,
+  a:active {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $pink;
+    text-decoration: none;
+  }
   .content-wrapper {
     color: white;
     display: flex;
@@ -291,7 +304,35 @@ footer {
       margin-top: 50px;
     }
     i {
-      padding-right: 20px;
+      padding-right: 10px;
+    }
+    i:hover {
+      transition: color 2s;
+    }
+    form {
+      input[type="email"] {
+        border: none;
+        border-radius: 10px;
+        padding: 20px 0px;
+        width: 98%;
+      }
+      input[value="name@email.com"] {
+        color: $grey;
+        padding: 20px 5px;
+      }
+      input[type="submit"] {
+        background: $pink;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .10rem;
+        margin: 25px 0px;
+        padding: 20px 0px;
+        width: 40%;
+        float: right;
+      }
     }
   }
   .attribution {

@@ -103,7 +103,8 @@ h2 {
 
 h3 {
   color: white;
-  text-align: left; }
+  text-align: left;
+  text-transform: uppercase; }
 
 /* Header */
 header {
@@ -127,7 +128,8 @@ header {
     background: white; }
   header a.nav-hover:hover {
     background: #ff52bf;
-    color: white; }
+    color: white;
+    transition: background-color 1s; }
 
 /* Hero */
 #hero {
@@ -176,7 +178,8 @@ header {
 a.main-button:hover {
   color: #ff52bf;
   background-color: white;
-  border: 1px solid #ff52bf; }
+  border: 1px solid #ff52bf;
+  transition: background-color 1s; }
 
 /* Features */
 #more-info .content-wrapper {
@@ -202,6 +205,14 @@ a.main-button:hover {
 /* Footer */
 footer {
   background: #00252e; }
+  footer a:link,
+  footer a:visited,
+  footer a:active {
+    color: white;
+    text-decoration: none; }
+  footer a:hover {
+    color: #ff52bf;
+    text-decoration: none; }
   footer .content-wrapper {
     color: white;
     display: flex;
@@ -213,7 +224,29 @@ footer {
       width: 100%;
       margin-top: 50px; }
     footer .content-wrapper i {
-      padding-right: 20px; }
+      padding-right: 10px; }
+    footer .content-wrapper i:hover {
+      transition: color 2s; }
+    footer .content-wrapper form input[type="email"] {
+      border: none;
+      border-radius: 10px;
+      padding: 20px 0px;
+      width: 98%; }
+    footer .content-wrapper form input[value="name@email.com"] {
+      color: #8a959d;
+      padding: 20px 5px; }
+    footer .content-wrapper form input[type="submit"] {
+      background: #ff52bf;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: .10rem;
+      margin: 25px 0px;
+      padding: 20px 0px;
+      width: 40%;
+      float: right; }
   footer .attribution {
     color: white;
     font-size: .75rem;
