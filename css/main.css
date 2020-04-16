@@ -114,14 +114,29 @@ header {
   padding: 20px 0px; }
   header .logo img {
     width: 50%; }
+  header .nav-button a:link,
+  header .nav-button a:visited,
+  header .nav-button a:active {
+    color: #ff52bf;
+    font-size: 1rem;
+    text-decoration: none; }
+  header a.nav-hover {
+    border: 1.5px solid #ff52bf;
+    border-radius: 30px;
+    padding: 5px 30px;
+    background: white; }
+  header a.nav-hover:hover {
+    background: #ff52bf;
+    color: white; }
 
 /* Hero */
 #hero {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 100px 0px 0px 0px; }
   #hero .content-wrapper {
-    margin: 50px; }
+    margin: 0px 50px; }
   #hero p {
     text-align: center; }
   #hero .hero-stats {
@@ -130,7 +145,7 @@ header {
     justify-content: center;
     align-items: center; }
     #hero .hero-stats article {
-      margin-bottom: 150px; }
+      margin-bottom: 100px; }
     #hero .hero-stats h1 {
       font-family: "Open Sans", sans-serif;
       font-size: 4rem;
@@ -144,12 +159,32 @@ header {
     width: 100%;
     padding: 50px 0px; }
 
+/* Main Button Styles */
+.button-section {
+  margin: 75px 0px; }
+
+.main-button {
+  background: #ff52bf;
+  border-radius: 40px;
+  color: white;
+  padding: 15px 45px;
+  width: 50%;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none; }
+
+a.main-button:hover {
+  color: #ff52bf;
+  background-color: white;
+  border: 1px solid #ff52bf; }
+
+/* Features */
 #more-info .content-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px; }
+  margin: 0px 50px; }
   #more-info .content-wrapper article {
     align-self: center;
     text-align: center;
@@ -164,6 +199,7 @@ header {
   #more-info .sign-up h1 {
     font-size: 2rem; }
 
+/* Footer */
 footer {
   background: #00252e; }
   footer .content-wrapper {
@@ -182,7 +218,7 @@ footer {
     color: white;
     font-size: .75rem;
     margin: 10px 10px 0px 10px;
-    padding: 0;
+    padding-bottom: 10px;
     text-align: center; }
 
 /* ==========================================================================
